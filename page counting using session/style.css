@@ -1,0 +1,32 @@
+	.container
+	{
+		background-color:lightblue;
+		display:grid;
+		width:100px;
+		heigth:100px;
+		justify-content:center;
+		padding-bottom:10px;
+	}
+	a
+	{
+		color:black;
+		text-decoration:underline;
+	}
+	.title
+	{
+		padding:10 0 20 0;
+	}
+	
+	.container2
+	{
+		background-color:lightblue;
+		display:grid;
+		width:200px;
+		heigth:200px;
+		justify-content:center;
+		padding-bottom:10px;
+	}
+	.title2
+	{
+		padding:10 0 20 25;
+	}
