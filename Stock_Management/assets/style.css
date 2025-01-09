@@ -1,0 +1,400 @@
+/***** base rule *****/ 
+html{
+    font-size: 62.5%;
+    /* 1 rem = 10px */
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+p,
+li,
+a,
+label {
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    color: var(--main-color);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+/***** layout *****/
+body{
+    display: flex;
+    align-items: start;
+}
+.container{
+    width: 110rem;
+    margin: 0 auto;
+    padding: 3rem 5rem;
+}
+.grid{
+    display: grid;
+}
+.grid-two--cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/***** theme *****/
+:root {
+    --main-color: #0062ff;
+    --supporting-color: #ebf3fe;
+    --font-color: #424242;
+    --bg-color: #f7fcff;
+    --heading-color: #000a19;
+    --hero-heading-color: #003b99;
+    --white-color: #ffffff;
+    --para-color: #504e4d;
+    --bnt-hover-bg-color: #003b99;
+    --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --footer-bg-color: #040d12;
+}
+/***** start sidebar Section *****/ 
+.section-navbar{
+    width: 20rem;
+    border: 1px solid var(--main-color);
+    background-color: var(--supporting-color);
+    margin-right: 10rem;
+}
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    & li{
+        border: 1px solid var(--main-color);
+        padding: 1rem 0rem;
+    }
+}
+/***** End start sidebar Section *****/
+
+/***** start dashboard content Section *****/ 
+.section-dashboard-content .container{
+    padding: 3rem 15rem;
+}
+.sub-heading{
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+.total-categories , .total-products{
+    display: grid;
+    gap: 5rem;
+    background-color: var(--supporting-color);
+    border: 0.2rem solid var(--main-color);
+    text-align: center;
+    padding: 5rem 0rem;
+}
+.section-dashboard-content .grid{
+    gap: 10rem;
+}
+.category-sum , .products-sum{
+    color: var(--hero-heading-color);
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+/***** End start dashboard content Section *****/
+
+
+/***** category Section *****/ 
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+.sub-container{
+    display: flex;
+    border: 0.2rem solid var(--main-color);
+    background-color: var(--supporting-color);
+}
+.operation{
+    display: flex;
+    gap: 2rem;
+
+}
+.category-list i,.product-list i{
+    color: var(--main-color);
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+.operation i {
+    border: 0.2rem solid var(--main-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.image-container{
+    padding: 1rem;
+    border-right: 0.2rem solid var(--main-color);
+}
+.detail{
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    text-align: center;
+    width: 100%; 
+    padding: 1rem;
+}
+.category-list button,.product-list button{
+    cursor: pointer;
+    border: 0.2rem solid var(--main-color);
+    padding: 1rem;
+    background-color: var(--supporting-color);
+    color: var(--main-color);
+    font-size: 2rem;
+    font-weight: 400;
+}
+/***** End category Section *****/
+
+/***** add category Section *****/ 
+.add-category,.add-product{
+    text-align: center;
+}
+.input-box::placeholder{
+    color: var(--main-color);
+}
+.input-box{
+    border: 0.2rem solid var(--main-color);
+    width: 50%;
+    padding:1rem 1rem;
+}
+.mail-icon i{
+    color: var(--main-color);
+    font-size: 10rem;
+}
+.mail-icon i{
+    padding: 5rem;
+    border: 0.3rem solid var(--main-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.add-components{
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+    align-items: center;
+}
+.mail-icon p{
+    margin-bottom: 1rem;
+}
+.add-btn button{
+    border: 0.2rem solid var(--main-color);
+    padding: 1rem 10rem;
+    background-color: var(--supporting-color);
+    color: var(--main-color);
+    font-size: 2rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+/***** End add category Section *****/
+
+
+/***** add product Section *****/ 
+.product-categories-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.update i{
+    cursor: pointer;
+}
+.product-categories{
+    appearance: none;
+    border: 0.2rem solid var(--main-color);
+    width: 100%;
+    padding:1rem 1rem;
+    color: var(--main-color);
+}
+.select-con{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+}
+.icon-container{
+    position: absolute;
+    /* right: 25.2rem; */
+    font-size: 2rem;
+    color: var(--main-color);
+    background-color: var(--supporting-color);
+    border-left: 0.2rem solid var(--main-color);
+    right: 0.2rem;
+
+    & i{
+        padding: 0.7rem 1.5rem 
+    }
+}
+.add-product .add-components{
+    gap: 2rem;
+}
+.txt-area{
+    color: var(--main-color);
+    border: 0.2rem solid var(--main-color);
+    padding: 5rem 1rem;
+    width: 50%;
+}
+.category-list a button{
+    cursor: pointer;
+}
+
+.product-type,.product-availability{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.product-type input[type="checkbox"] ,.product-availability input[type="radio"]{
+    accent-color: var(--main-color);
+    width: 2rem;
+    aspect-ratio: 1;
+    outline: 0.2rem auto var(--main-color);
+}
+.product-type label , .product-availability label{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.add-product .mail-icon{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &.mail-icon i{
+        padding: 2rem;
+        font-size: 5rem;
+    }
+}
+.file-upload-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mail-icon input[type="file"]{
+    display: none;
+}
+.file-upload-container label{
+    cursor: pointer;
+}
+.add-btn button{
+    cursor: pointer;
+}
+
+/***** End addd product Section *****/
+
+
+/***** media queries Section *****/ 
+@media (width < 1400px) {
+    html {
+        font-size: 56.25%;
+        /* 1 rem = 9px */
+    }
+}
+
+@media (width<=1200px) {
+    html {
+        font-size: 54%;
+        /* 1 rem = 8.5px */
+    }
+    .section-dashboard-content{
+        & .container{
+            width: 90rem;
+        }
+    }
+    .category-list,.product-list{
+        & .container{
+            width: 90rem;
+        }
+    }
+    .add-category,.add-product{
+        & .container{
+            width: 90rem;
+        }
+    }
+}
+@media (width<=1000px) {
+    
+}
+@media (width<=992px) {
+    .section-dashboard-content{
+        & .grid-two--cols{
+            grid-template-columns: 1fr;
+        }
+    }
+    .category-list,.product-list{
+        & .container{
+            width: 67rem;
+        }
+    }
+    .add-category,.add-product{
+        & .container{
+            width: 69rem;
+        }
+    }
+}
+
+@media (width<=768px) {
+    .section-navbar {
+        margin-right: 5rem;
+    }
+    .section-dashboard-content{
+        & .container{
+            padding-left: 0;
+            width: 50rem;
+        }
+    }
+    .category-list,.product-list{
+        & .container{
+            width: 50rem;
+        }
+    }
+    .add-category,.add-product{
+        & .container{
+            width: 40rem;
+        }
+    }
+    .section-navbar{
+        margin: 0;
+    }
+}
+@media (width<=576px) {
+    .section-dashboard-content{
+        & .container{
+            width: 30rem;
+        }
+    }
+}
+
+/***** End media queries Section *****/
+
+
